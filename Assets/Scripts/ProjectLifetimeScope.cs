@@ -1,4 +1,6 @@
-using PlatformerTest.Impl;
+using PlatformerTest.InputController;
+using PlatformerTest.Scenes;
+using PlatformerTest.Scenes.Impl;
 using VContainer;
 using VContainer.Unity;
 
@@ -14,8 +16,9 @@ namespace PlatformerTest
 
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.Register<IInputController, InputController>(Lifetime.Singleton);
-            
+            builder.Register<IInputController, InputController.Impl.InputController>(Lifetime.Singleton);
+            builder.Register<IScenesController, ScenesControllerLazy>(Lifetime.Singleton);
+
             builder.RegisterBuildCallback(resolver =>
             {
                 resolver.Resolve<IInputController>();

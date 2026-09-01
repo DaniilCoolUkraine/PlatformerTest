@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PlatformerTest
+namespace PlatformerTest.InputController
 {
     public interface IInputController
     {

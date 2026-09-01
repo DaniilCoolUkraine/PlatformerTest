@@ -1,12 +1,19 @@
+using PlatformerTest.InputController;
+using PlatformerTest.Scenes;
 using SimpleEventBus.SimpleEventBus.Runtime;
 using UnityEngine;
 using VContainer;
 
-namespace PlatformerTest.Debug
+namespace PlatformerTest.DebugUtils
 {
     public class DebugManager : MonoBehaviour
     {
-        [Inject] private IInputController _inputController;
+        [Inject] private IScenesController _scenesController;
+
+        private void Awake()
+        {
+            DontDestroyOnLoad(gameObject);
+        }
 
         private void OnEnable()
         {
@@ -22,12 +29,12 @@ namespace PlatformerTest.Debug
 
         private void OnMainSceneLoad(LoadMainSceneEvent ev)
         {
-            UnityEngine.Debug.Log("OnMainSceneLoad");
+            _scenesController.LoadScene(Scenes.Scenes.MainMenu);
         }
 
         private void OnGameplaySceneLoad(LoadGameplaySceneEvent ev)
         {
-            UnityEngine.Debug.Log("OnGameplaySceneLoad");
+            _scenesController.LoadScene(Scenes.Scenes.GameplayScene);
         }
     }
 }

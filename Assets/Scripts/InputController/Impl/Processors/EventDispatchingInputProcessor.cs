@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-namespace PlatformerTest.Impl.Processors
+namespace PlatformerTest.InputController.Impl.Processors
 {
     public abstract class EventDispatchingInputProcessor : IInputProcessor
     {

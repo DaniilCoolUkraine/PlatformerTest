@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using SimpleEventBus.SimpleEventBus.Runtime;
 using UnityEngine.InputSystem;
 
-namespace PlatformerTest.Impl.Processors
+namespace PlatformerTest.InputController.Impl.Processors
 {
     public sealed class DebugInputProcessor : EventDispatchingInputProcessor
     {

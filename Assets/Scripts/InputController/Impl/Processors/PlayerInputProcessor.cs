@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace PlatformerTest.Impl.Processors
+namespace PlatformerTest.InputController.Impl.Processors
 {
     public sealed class PlayerInputProcessor : IInputProcessor
     {

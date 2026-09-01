@@ -1,4 +1,4 @@
-namespace PlatformerTest
+namespace PlatformerTest.InputController
 {
     public interface IInputProcessor
     {

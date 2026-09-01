@@ -1,9 +1,9 @@
 using System;
-using PlatformerTest.Impl.Processors;
+using PlatformerTest.InputController.Impl.Processors;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace PlatformerTest.Impl
+namespace PlatformerTest.InputController.Impl
 {
     public sealed class InputController : IInputController
     {

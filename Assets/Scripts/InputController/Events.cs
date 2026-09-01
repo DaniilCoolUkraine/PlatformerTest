@@ -1,6 +1,6 @@
 using SimpleEventBus.SimpleEventBus.Runtime;
 
-namespace PlatformerTest
+namespace PlatformerTest.InputController
 {
     public class LoadMainSceneEvent : IEvent
     {
